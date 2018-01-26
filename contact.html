@@ -22,10 +22,32 @@
 
 
 <div id="content">
-  <div id="contact">    
+  <div id="contact">
+  <div>    
     <div class="me"><h2>Contact</h2></div>
   </div>
 
+    <form action="/my-handling-form-page" method="post">
+        <div>
+          <label>Name</label> 
+          <input class="name1" type="text" on foucs="this.value='';" name="Name" value="Eva Kyle">
+        </div>
+
+        <div>
+          <label>E-mail:</label> 
+          <input class="email" type="text" on foucs="this.value='';" name="email" value="example@gmail.com">
+        </div>
+
+        <div>
+          <label>Message:</label> 
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
 
     <div id="connect">
      <div class="con"><h3>Connect With Me</h3></div>
@@ -37,7 +59,9 @@
   </div>
   </div>
 
-    <footer>© Copyright 2018 Roberto (R.J.) Aguero</footer>
+    <footer>
+    <div class="footertext">© Copyright 2018 Roberto (R.J.) Aguero
+    </footer>
 
     </body>
   </html>
