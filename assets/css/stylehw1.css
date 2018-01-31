@@ -15,7 +15,6 @@ nav{
 header{
 margin:0px;
 height: 100px;
-/*padding: 25px;*/
 margin-bottom: 25px;
 color:black;
 background-color: grey;
@@ -55,7 +54,6 @@ text-decoration:underline;
 
 #content{
 	width: 960px;
-	overflow: hidden;
 	margin: auto;
 }
 
@@ -63,10 +61,6 @@ text-decoration:underline;
     color: white;
     display: inline-block;
     background-color: red;
-    /*border-radius: 10px;*/
-    /*padding: 15px;*/
-    /*margin: 0;*/
-    /*margin-left: auto;*/
     font-family: 'Georgia', Times, Times New Roman, serif;
 	height: 100%;
 }
@@ -74,7 +68,7 @@ text-decoration:underline;
 #about{
 	width: 650px;
 	padding: 13px;
-	height: 400px;
+	height: 100%;
 	float: left;
 	color: black;
 	background-color: white;
@@ -98,8 +92,14 @@ text-decoration:underline;
 }
 
 #bio-image{
+	width: 200px;
+	height: auto;
+	float: left;
+	/*margin-top: 20px;*/
+	/*margin-right: 25px;*/
 	margin: 0px 10px;
-	padding-top: 10px;
+	/*padding-top: 10px;*/
+
 }
 
 #portfolio{
@@ -165,7 +165,7 @@ text-decoration:underline;
 
 footer{
 	border-top: 10px solid red;
-	position: fixed;
+	/*position: absolute;*/
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -173,6 +173,8 @@ footer{
 	background-color: grey;
 	text-align: center;
 	font-size: 10px;
+	clear: both;
+	/*margin-top: 50px;*/
 }
 
 .footertext{
@@ -209,8 +211,71 @@ form {
       }
       .button {
       }
+
       button {
         background-color: red;
         height: 40px;
         width: 75px;
       }
+
+@media screen and (max-width: 980px){
+	#about{
+		width: 60%;
+		height: 100%;
+		margin-bottom: 20px;
+		/*overflow: scroll;*/
+		/*margin: auto;*/
+	}
+	#content{
+		margin: auto;
+		width: 80%;
+	}
+	#connect{
+		width: 200px;
+		float: right;
+	}
+	#connect-image img{
+		width: 25%;
+		padding-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	#about{
+		width: 95%;
+		margin: auto;
+		margin-right: 0px;
+	}
+	#connect{
+		width: 100%;
+		margin: auto;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+	#bio-image{
+		width: 100%;
+		/*height: auto;*/
+		margin-bottom: 10px;
+		padding: auto;
+	}
+	#connect-image img{
+		width: 10%;
+	}
+}
+
+@media screen and (max-width: 640px){
+	nav{
+		width: 100%;
+	}
+	#name{
+		width: 100%;
+		margin: auto;
+	}
+	#about{
+		width: 92%;
+	}
+	#connect{
+		width: 100%;
+	}
+}
