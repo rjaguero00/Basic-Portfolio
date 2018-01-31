@@ -238,6 +238,9 @@ form {
 		width: 25%;
 		padding-top: 20px;
 	}
+	#bio-image{
+		margin: auto;
+	}
 }
 
 
@@ -261,6 +264,11 @@ form {
 	}
 	#connect-image img{
 		width: 10%;
+	}
+	#bio-image{
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 }
 
