@@ -3,6 +3,15 @@ body{
 	background-repeat: repeat;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 li {
 	display: inline; 
 }
@@ -55,6 +64,7 @@ text-decoration:underline;
 #content{
 	width: 960px;
 	margin: auto;
+	/*margin-bottom: 20px;*/
 }
 
 .name{
@@ -105,7 +115,7 @@ text-decoration:underline;
 #portfolio{
 	width: 650px;
 	padding: 13px;
-	height: 800px;
+	height: 100%;
 	float: left;
 	color: black;
 	background-color: white;
@@ -165,7 +175,7 @@ text-decoration:underline;
 
 footer{
 	border-top: 10px solid red;
-	/*position: absolute;*/
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -173,8 +183,8 @@ footer{
 	background-color: grey;
 	text-align: center;
 	font-size: 10px;
-	clear: both;
-	/*margin-top: 50px;*/
+	/*clear: both;*/
+	/*margin-top: 120px;*/
 }
 
 .footertext{
@@ -217,70 +227,3 @@ form {
         height: 40px;
         width: 75px;
       }
-
-@media screen and (max-width: 980px){
-	#about{
-		width: 60%;
-		height: 100%;
-		margin-bottom: 20px;
-		/*overflow: scroll;*/
-		/*margin: auto;*/
-	}
-	#content{
-		margin: auto;
-		width: 80%;
-	}
-	#connect{
-		width: 200px;
-		float: right;
-	}
-	#connect-image img{
-		width: 25%;
-		padding-top: 20px;
-	}
-	#bio-image{
-		width: 100%;
-		margin: auto;
-		margin-bottom: 30px;
-	}
-}
-
-
-@media screen and (max-width: 768px){
-	#about{
-		width: 95%;
-		margin: auto;
-		margin-right: 0px;
-	}
-	#connect{
-		width: 100%;
-		margin: auto;
-		margin-bottom: 20px;
-		margin-top: 30px;
-	}
-	#connect-image img{
-		width: 10%;
-	}
-	#bio-image{
-		width: 100%;
-		margin: auto;
-		margin-top: 10px;
-		margin-bottom: 30px;
-	}
-}
-
-@media screen and (max-width: 640px){
-	nav{
-		width: 100%;
-	}
-	#name{
-		width: 100%;
-		margin: auto;
-	}
-	#about{
-		width: 92%;
-	}
-	#connect{
-		width: 100%;
-	}
-}
